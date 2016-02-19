@@ -3,8 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "watch": {
+    "test": {
+      "extensions": "js,html"
+    }
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "watch": "npm-watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +24,12 @@
   "homepage": "https://github.com/highplaya/ngbook#readme",
   "devDependencies": {
     "angular": "^1.4.9"
+  },
+  "dependencies": {
+    "koa": "^1.1.2",
+    "koa-body": "^1.4.0",
+    "koa-route": "^2.4.2",
+    "koa-static": "^2.0.0",
+    "npm-watch": "^0.1.1"
   }
 }
